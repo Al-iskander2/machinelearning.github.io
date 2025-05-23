@@ -1,31 +1,129 @@
-<section id="projects">
-  <h2>Proyectos de Machine Learning</h2>
-
-  <div class="project-card">
-    <h3>📈 Predictor of Stocks</h3>
-    <p><strong>Función:</strong> Anticipa la dirección del precio de cualquier acción listada.</p>
-    <p><strong>Uso:</strong> Inserta el ticker en el notebook; LSTM + indicadores técnicos generan la probabilidad de tendencia.</p>
-    <a href="https://colab.research.google.com/drive/151CHTQIkMKo-bvM4TqmDHHiST63kYCZI?usp=sharing" target="_blank" class="button">Try it on Colab</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos de Machine Learning</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #1a1a1a;
+      --card: #2a2a2a;
+      --text: #e0e0e0;
+      --accent: #4f9aff;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      padding: 1rem;
+      flex: 1;
+    }
+    .card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card .icon {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .card h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+    .card p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+    .card a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--accent);
+      align-self: flex-start;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚀 Proyectos de Machine Learning</h1>
+  </header>
+  <div class="projects">
+    <div class="card">
+      <div class="icon"><i class="fas fa-chart-line"></i></div>
+      <h2>Predictor de Stocks</h2>
+      <p><strong>Función:</strong> Anticipa la dirección del precio de cualquier acción listada.<br>
+      <strong>Uso:</strong> Inserta el ticker en el notebook; LSTM + indicadores técnicos generan la probabilidad de tendencia.</p>
+      <a href="#">Try it on Colab →</a>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fas fa-lock"></i></div>
+      <h2>ML-Encryption</h2>
+      <p><strong>Función:</strong> Autoencoder TensorFlow para cifrado de datos sensibles.<br>
+      <strong>Uso:</strong> Genera criptogramas resistentes; ideal para privacy-preserving ML.</p>
+      <a href="#">Try it on Colab →</a>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fas fa-file-pdf"></i></div>
+      <h2>ML-PDF-Scan</h2>
+      <p><strong>Función:</strong> Detección de PDFs maliciosos mediante OCR y clasificación.<br>
+      <strong>Uso:</strong> Extrae texto/imágenes → clasifica benigno vs. peligroso.</p>
+      <a href="#">Try it on Colab →</a>
+    </div>
+    <div class="card">
+      <div class="icon"><i class="fas fa-robot"></i></div>
+      <h2>ML-LLM</h2>
+      <p><strong>Función:</strong> LLM ligero orientado a asistencia bancaria.<br>
+      <strong>Uso:</strong> Chatbot con respuestas en lenguaje natural, diseñado para conversaciones financieras.</p>
+      <a href="#">Try it on Colab →</a>
+    </div>
   </div>
-
-  <div class="project-card">
-    <h3>🔐 ML-Encryption</h3>
-    <p><strong>Función:</strong> Autoencoder TensorFlow para cifrado de datos sensibles.</p>
-    <p><strong>Uso:</strong> Genera criptogramas resistentes; ideal para privacy-preserving ML.</p>
-    <a href="https://colab.research.google.com/drive/1xYMw9TN07d-5UQEWcksdUWTuEbQUVRfA?usp=sharing" target="_blank" class="button">Try it on Colab</a>
-  </div>
-
-  <div class="project-card">
-    <h3>📄 ML-PDF-Scan</h3>
-    <p><strong>Función:</strong> Detección de PDFs maliciosos mediante OCR y clasificación.</p>
-    <p><strong>Uso:</strong> Extrae texto/imágenes ➔ clasifica benigno vs. peligroso.</p>
-    <a href="https://colab.research.google.com/drive/1XFgimlA9eEToS5IhENjwjQOdG-5cs1Hr?usp=sharing" target="_blank" class="button">Try it on Colab</a>
-  </div>
-
-  <div class="project-card">
-    <h3>🤖 ML-LLM</h3>
-    <p><strong>Función:</strong> LLM ligero orientado a asistencia bancaria.</p>
-    <p><strong>Uso:</strong> Chatbot con respuestas en lenguaje natural, diseñado para conversaciones financieras.</p>
-    <a href="https://colab.research.google.com/drive/1OUer1o2NzuzIoLwtAT9Z4Z45HEyDzxAy?usp=sharing" target="_blank" class="button">Try it on Colab</a>
-  </div>
-</section>
+  <footer>
+    &copy; 2025 Al-Iskander2 • <a href="#" style="color: var(--accent);">GitHub Repository</a>
+  </footer>
+</body>
+</html>
