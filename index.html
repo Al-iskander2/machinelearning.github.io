@@ -11,7 +11,7 @@
   <style>
     :root {
       --bg: #1a1a1a;
-      --card: #2a2a2a;
+      --card: #fffdf3;
       --text: #e0e0e0;
       --accent: #4f9aff;
       --radius: 8px;
@@ -33,6 +33,7 @@
     header h1 {
       font-weight: 400;
       font-size: 2rem;
+      color: var(--text);
     }
     .projects {
       display: grid;
@@ -49,6 +50,7 @@
       flex-direction: column;
       justify-content: space-between;
       transition: transform 0.2s ease;
+      color: #1a1a1a;
     }
     .card:hover {
       transform: translateY(-5px);
@@ -90,40 +92,40 @@
 </head>
 <body>
   <header>
-    <h1>🚀 Proyectos de Machine Learning</h1>
+    <h1>Proyectos de Machine Learning</h1>
   </header>
   <div class="projects">
     <div class="card">
       <div class="icon"><i class="fas fa-chart-line"></i></div>
-      <h2>Predictor de Stocks</h2>
-      <p><strong>Función:</strong> Anticipa la dirección del precio de cualquier acción listada.<br>
-      <strong>Uso:</strong> Inserta el ticker en el notebook; LSTM + indicadores técnicos generan la probabilidad de tendencia.</p>
-      <a href="#">Try it on Colab →</a>
+      <h2>Predictor of Stocks</h2>
+      <p><strong>Función:</strong> Permite anticipar la subida o bajada del precio de cualquier acción listada en bolsa.<br>
+      <strong>Uso:</strong> Solo hace falta introducir el “ticker” de la acción en el notebook para obtener una predicción basada en un modelo LSTM que analiza series temporales históricas, genera indicadores técnicos (p. ej. medias móviles, RSI) y devuelve la probabilidad de tendencia al alza o a la baja.</p>
+      <a href="https://colab.research.google.com/drive/151CHTQIkMKo-bvM4TqmDHHiST63kYCZI?usp=sharing" target="_blank">Try it →</a>
     </div>
     <div class="card">
       <div class="icon"><i class="fas fa-lock"></i></div>
       <h2>ML-Encryption</h2>
-      <p><strong>Función:</strong> Autoencoder TensorFlow para cifrado de datos sensibles.<br>
-      <strong>Uso:</strong> Genera criptogramas resistentes; ideal para privacy-preserving ML.</p>
-      <a href="#">Try it on Colab →</a>
+      <p><strong>Función:</strong> Crea capas de cifrado de datos sensibles mediante un autoencoder entrenado con TensorFlow.<br>
+      <strong>Uso:</strong> Genera criptogramas que solo pueden descifrarse con la clave correcta, comparando su robustez frente a sistemas de cifrado convencionales; ideal para proteger información en tránsito o reposo utilizando técnicas de privacy-preserving ML.</p>
+      <a href="https://colab.research.google.com/drive/1xYMw9TN07d-5UQEWcksdUWTuEbQUVRfA?usp=sharing" target="_blank">Try it →</a>
     </div>
     <div class="card">
       <div class="icon"><i class="fas fa-file-pdf"></i></div>
       <h2>ML-PDF-Scan</h2>
-      <p><strong>Función:</strong> Detección de PDFs maliciosos mediante OCR y clasificación.<br>
-      <strong>Uso:</strong> Extrae texto/imágenes → clasifica benigno vs. peligroso.</p>
-      <a href="#">Try it on Colab →</a>
+      <p><strong>Función:</strong> Analiza archivos PDF para identificar si contienen contenido malicioso (scripts ocultos, enlaces peligrosos) o son benignos.<br>
+      <strong>Uso:</strong> Emplea OCR (Tesseract) y filtros de OpenCV para extraer y procesar texto e imágenes, luego un clasificador entrenado determina la naturaleza del PDF; facilita el escaneo automático de grandes volúmenes de documentos.</p>
+      <a href="https://colab.research.google.com/drive/1XFgimlA9eEToS5IhENjwjQOdG-5cs1Hr?usp=sharing" target="_blank">Try it →</a>
     </div>
     <div class="card">
       <div class="icon"><i class="fas fa-robot"></i></div>
       <h2>ML-LLM</h2>
-      <p><strong>Función:</strong> LLM ligero orientado a asistencia bancaria.<br>
-      <strong>Uso:</strong> Chatbot con respuestas en lenguaje natural, diseñado para conversaciones financieras.</p>
-      <a href="#">Try it on Colab →</a>
+      <p><strong>Función:</strong> Modelo ligero de LLM con ventana de contexto ajustada, orientado a asistencia bancaria.<br>
+      <strong>Uso:</strong> Chatbot que ofrece respuestas en lenguaje natural, diseñado para conversaciones financieras y soporte en banca.</p>
+      <a href="https://colab.research.google.com/drive/1OUer1o2NzuzIoLwtAT9Z4Z45HEyDzxAy?usp=sharing" target="_blank">Try it →</a>
     </div>
   </div>
   <footer>
-    &copy; 2025 Al-Iskander2 • <a href="#" style="color: var(--accent);">GitHub Repository</a>
+    &copy; 2025 Al-Iskander2 • <a href="https://github.com/Al-iskander2/machinelearning.github.io" style="color: var(--accent);" target="_blank">GitHub Repository</a>
   </footer>
 </body>
 </html>
